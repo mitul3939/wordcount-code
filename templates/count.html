@@ -1,0 +1,25 @@
+<h1>COUNT</h1>
+{{fulltext}}
+<br/>
+<h1>There are {{count}} words in your text. </h1>
+<h1>
+    The average word length in your text is {{avgnum}}
+   <br/>
+    The word 'is' is repeated {{repeated_word}} times.
+</h1>
+<form action="">    
+    <form action="{% url 'home' %}">
+    <input type="submit" value="home" />
+</form>
+<br/>
+<h2>replace</h2>
+<form action="">
+    <textarea cols='20' rows='10' name='text'></textarea>
+    <br/>
+</form>    
+<h2>to</h2>
+<form action="">
+    <textarea cols='20' rows='10' name='text'></textarea>
+    <br/>
+    <input type="submit" value="replace" />
+</form>
